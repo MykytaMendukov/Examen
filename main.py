@@ -1,12 +1,9 @@
-#6
-import random
+#7
+d = {}
 l = []
-for i in range(6):
-    i = random.randint(1, 10)
-    l.append((i))
-print(f'Початковий список: {l}')
-l1 = []
-for n in l:
-    if n % 2 == 0:
-        l1.append(n)
-print(f'писок з парними числами: {l1}')
+for i in range(3):
+    name = input("Введіть ім'я: ")
+    mark = int(input('Введіть оцінку: '))
+    d[name] = mark
+mars_m = max(d, key=d.get)
+print(mars_m)
