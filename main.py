@@ -1,6 +1,5 @@
 #7
 d = {}
-l = []
 for i in range(3):
     name = input("Введіть ім'я: ")
     mark = int(input('Введіть оцінку: '))
