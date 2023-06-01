@@ -1,12 +1,11 @@
-#8
-l = []
-l1 = []
-for i in range(4):
-    a = input('Введіть рядок: ')
-    l.append(a)
+#9
+l2 = []
 def f(l):
-    for n in l:
-        if n[0].isupper():
-            l1.append(n)
-    return l1
-print(f(l))
+    l1 = l.split(' ')
+    print(l1)
+    for i in l1:
+        if 'Python' in i:
+            l2.append(i)
+print(f'Список з слів, що мають у собі "Python": {l2}')
+l = input('Введіть слова через пробіл:')
+f(l)
