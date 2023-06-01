@@ -1,9 +1,15 @@
-#3
-class Book:
-    def __init__(self, title, author):
-        self.title = title
-        self.author = author
-    def get_info(self):
-        print(f'Назва: {self.title}, Автор: {self.author}')
-b = Book('1984', 'Джордж Орвелд')
-b.get_info()
+#4
+# Створіть клас Animal (тварина) з атрибутами name (ім'я) і
+# sound (звук). Додайте метод make_sound, який виводить
+# звук, який робить тварина.
+
+class Animal:
+    def __init__(self, name, sound):
+        self.name = name
+        self.sound = sound
+    def make_sound(self):
+        print(f'{self.name} робить "{self.sound}!"')
+a1 = Animal('Собака', 'Гав')
+a2 = Animal('Котик', 'Мяу')
+a1.make_sound()
+a2.make_sound()
