@@ -1,4 +1,9 @@
-#4
+#5
 a = input('Введіть слово: ')
-for letter in a:
-    print(letter)
+def pol():
+    res = a.lower()
+    if res == res[::-1]:
+        print(True)
+    else:
+        print(False)
+pol()
