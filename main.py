@@ -1,10 +1,10 @@
-#9
-l2 = []
-def f(l):
-    l1 = l.split(' ')
-    for i in l1:
-        if 'Python' in i:
-            l2.append(i)
-l = input('Введіть слова через пробіл:')
-f(l)
-print(f'Список з слів, що мають у собі "Python": {l2}')
+#1
+
+class Student:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    def get_info(self):
+        print(f"Ім'я студента: {self.name}, Вік: {self.age}")
+s = Student('Oleg', 12)
+s.get_info()
