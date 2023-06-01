@@ -1,9 +1,12 @@
-#7
-d = {}
+#8
 l = []
-for i in range(3):
-    name = input("Введіть ім'я: ")
-    mark = int(input('Введіть оцінку: '))
-    d[name] = mark
-mars_m = max(d, key=d.get)
-print(mars_m)
+l1 = []
+for i in range(4):
+    a = input('Введіть рядок: ')
+    l.append(a)
+def f(l):
+    for n in l:
+        if n[0].isupper():
+            l1.append(n)
+    return l1
+print(f(l))
