@@ -6,7 +6,7 @@ for i in range(4):
     l.append(a)
 def f(l):
     for n in l:
-        if n.isupper():
+        if n[0].isupper():
             l1.append(n)
     return l1
 print(f(l))
