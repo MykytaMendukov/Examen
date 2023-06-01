@@ -1,13 +1,6 @@
-#Частина 1: Основи Python
-
-#1
-print('Hello World!')
-
-#2
-a = int(input('Введіть перше число: '))
-b = int(input('Введіть друге число: '))
+#3
 s = 0
-for i in range(a, b + 1):
-    s+= i
+for i in range(101):
+    if i % 2 == 0:
+        s += i
 print(s)
-
