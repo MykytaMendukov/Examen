@@ -1,10 +1,14 @@
-#1
+#2
 
-class Student:
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
-    def get_info(self):
-        print(f"Ім'я студента: {self.name}, Вік: {self.age}")
-s = Student('Oleg', 12)
-s.get_info()
+class BankAccount:
+    def __init__(self, account_number, balance):
+        self.account_number = account_number
+        self.balance = balance
+    def deposit(self, n):
+        print(f'Баланс: {self.balance + n}')
+    def withdraw(self, n):
+        print(f'Баланс: {self.balance - n}')
+b = BankAccount(12, 1000)
+n = int(input('Введіть число: '))
+b.deposit(n)
+b.withdraw(n)
